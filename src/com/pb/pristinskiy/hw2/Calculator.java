@@ -8,11 +8,13 @@ public class Calculator {
         System.out.println("Input number one");
         int number1 = scan.nextInt();
 
+        System.out.println("Input arithmetic operator");
+        String sing = scan.next();
+
         System.out.println("Input number two");
         int number2 = scan.nextInt();
 
-        System.out.println("Input operator");
-        String sing = scan.next();
+
 
         switch (sing.charAt(0)) {
             case '+':
