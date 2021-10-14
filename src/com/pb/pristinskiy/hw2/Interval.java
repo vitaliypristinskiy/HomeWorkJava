@@ -14,9 +14,9 @@ public class Interval {
         } else if (number >= 36 && number <= 50) {
             System.out.print("[36-50]");
         } else if (number >= 51 && number <= 100) {
-            System.out.print("[0-14]");
+            System.out.print("[51-100]");
         } else {
-            System.out.print("введенное число не попадает в один из имеющихся промежутков");
+            System.out.print("введенное число не попадает ни в один из имеющихся промежутков");
         }
 
 
