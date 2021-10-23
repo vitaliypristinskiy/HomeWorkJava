@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Array {
     public static void main(String[] args) {
         int[] array = new int[10];
+        System.out.println("Пожалуйста, введите 10 целых чисел для массива");
         Scanner scan = new Scanner(System.in);
         array[0] = scan.nextInt();;
         array[1] = scan.nextInt();;
@@ -18,12 +19,12 @@ public class Array {
         array[8] = scan.nextInt();;
         array[9] = scan.nextInt();;
 
-        System.out.println(Arrays.toString(array));
+        System.out.println("Введенный массив:" + Arrays.toString(array));
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum = sum + array[i];
         }
-        System.out.println(sum);
+        System.out.println("Сумма элементов массива: " + sum);
 
         int counter = 0;
         for(int i = 0; i < array.length; i++)
@@ -31,7 +32,7 @@ public class Array {
             if(array[i] > 0)
                 counter += 1;
         }
-        System.out.println(counter);
+        System.out.println("Количество положительных элементов массива: " + counter);
 
         int [] mas = array;
         boolean isSorted = false;
@@ -48,6 +49,6 @@ public class Array {
                 }
             }
         }
-        System.out.println(Arrays.toString(mas));
+        System.out.println("Отсортированный массив:" + Arrays.toString(mas));
     }
 }
