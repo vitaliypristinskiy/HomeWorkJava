@@ -19,7 +19,7 @@ public class Array {
         array[8] = scan.nextInt();;
         array[9] = scan.nextInt();;
 
-        System.out.println("Введенный массив:" + Arrays.toString(array));
+        System.out.println("Введенный массив: " + Arrays.toString(array));
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum = sum + array[i];
@@ -49,6 +49,6 @@ public class Array {
                 }
             }
         }
-        System.out.println("Отсортированный массив:" + Arrays.toString(mas));
+        System.out.println("Отсортированный массив: " + Arrays.toString(mas));
     }
 }

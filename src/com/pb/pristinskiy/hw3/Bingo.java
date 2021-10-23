@@ -21,9 +21,9 @@ public class Bingo {
                 if (Number > 100) {
                     break;
                 } else if (Number > MyNumber) {
-                    System.out.println("Моё число меньше.");
+                    System.out.println("Введенное число больше чем задуманное.");
                 } else if (Number < MyNumber) {
-                    System.out.println("Моё число больше.");
+                    System.out.println("Введенное число меньше чем задуманное.");
                 } else if (Number == MyNumber) {
                     System.out.println("Поздравляем, Вы угадали с " + attempt + " попытки!");
                 }
