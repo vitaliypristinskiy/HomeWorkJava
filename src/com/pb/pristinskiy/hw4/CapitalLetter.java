@@ -6,7 +6,7 @@ public class CapitalLetter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String source = scan.nextLine();
-        StringBuffer res = new StringBuffer();
+        StringBuilder res = new StringBuilder();
 
         String[] strArr = source.split(" ");
         for (String str : strArr) {
