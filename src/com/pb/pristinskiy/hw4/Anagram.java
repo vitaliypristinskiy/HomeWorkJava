@@ -49,7 +49,7 @@ public class Anagram {
         valueOfchar1 = valueOfchar1.replaceAll(" ", "");
         valueOfchar2 = valueOfchar2.replaceAll(" ", "");
 
-        System.out.println("Результат проверки вляются ли две фразы анограммами: " + valueOfchar1.equalsIgnoreCase(valueOfchar2));
+        System.out.println("Результат проверки являются ли две фразы анограммами: " + valueOfchar1.equalsIgnoreCase(valueOfchar2));
     }
     }
 
