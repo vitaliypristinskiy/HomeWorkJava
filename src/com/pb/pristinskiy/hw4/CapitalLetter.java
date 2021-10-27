@@ -21,6 +21,5 @@ public class CapitalLetter {
 
         System.out.print("Результат: " + res.toString().trim());
 
-
    }
 }
