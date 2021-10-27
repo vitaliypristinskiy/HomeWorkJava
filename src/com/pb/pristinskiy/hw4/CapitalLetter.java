@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class CapitalLetter {
     public static void main(String[] args) {
+        function();
+    }
+        static void function() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Пожайлуста введите текст: ");
 
