@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CapitalLetter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.print("Пожайлуста введите текст: ");
         String source = scan.nextLine();
         StringBuilder res = new StringBuilder();
 
@@ -17,7 +18,7 @@ public class CapitalLetter {
             res.append(str).append(" ");
         }
 
-        System.out.print("Result: " + res.toString().trim());
+        System.out.print("Результат: " + res.toString().trim());
 
     }
 }
