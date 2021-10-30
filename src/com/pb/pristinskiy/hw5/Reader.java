@@ -46,5 +46,12 @@ public class Reader {
     public void setNumberPhone(String numberPhone) {
         this.numberPhone = numberPhone;
     }
+    Book reader1 = new Book();
+    Book reader2 = new Book();
+    Book reader3 = new Book();
+    reader1.setNameBook();
+    public void takeBook() {
+
+    }
 
 }
