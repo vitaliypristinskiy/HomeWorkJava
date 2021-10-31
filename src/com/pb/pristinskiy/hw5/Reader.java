@@ -3,7 +3,7 @@ package com.pb.pristinskiy.hw5;
 public class Reader {
 
         private String fullName;
-        private String readerNumber;
+        private int number;
         private String faculty;
         private String dateBirth;
         private String numberPhone;
@@ -16,12 +16,12 @@ public class Reader {
             this.fullName = fullName;
         }
 
-        public String getReaderNumber () {
-            return readerNumber;
+        public int getNumber () {
+            return number;
         }
 
-        public void setReaderNumber (String readerNumber){
-            this.readerNumber = readerNumber;
+        public void setReaderNumber (int number){
+            this.number = number;
         }
 
         public String getFaculty () {
@@ -47,10 +47,10 @@ public class Reader {
         public void setNumberPhone (String numberPhone){
             this.numberPhone = numberPhone;
         }
-    public Reader(String fullName, String readerNumber, String faculty,
+    public Reader(String fullName, int number, String faculty,
                   String dateBirth, String numberPhone) {
         this.fullName = fullName;
-        this.readerNumber = readerNumber;
+        this.number = number;
         this.faculty = faculty;
         this.dateBirth = dateBirth;
         this.numberPhone = numberPhone;
@@ -98,7 +98,7 @@ public class Reader {
     public String getInfo() {
         return "{" +
                 "ФИО='" + fullName + '\'' +
-                ", Номер читательского=" + readerNumber +
+                ", Номер читательского=" + number +
                 ", Факультет='" + faculty + '\'' +
                 ", Дата рождения='" + dateBirth + '\'' +
                 ", numberPhone='" + numberPhone + '\'' +
