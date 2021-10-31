@@ -105,13 +105,13 @@ public class Reader {
                 '}';
     }
 
-    public static void main(String[] args) {
-        Book reader1 = new Book();
-        Book reader2 = new Book();
-        Book reader3 = new Book();
+    //public static void main(String[] args) {
+      // Book reader1 = new Book();
+       // Book reader2 = new Book();
+      //  Book reader3 = new Book();
 
        // reader1.setTitle("Приключения");
         //System.out.println(reader1.getInfo());
 
-    }
+   // }
 }
