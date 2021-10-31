@@ -1,16 +1,16 @@
 package com.pb.pristinskiy.hw5;
 
 public class Book {
-    private String nameBook;
+    private String title;
     private String author;
     private int year;
 
-    public String getNameBook() {
-        return nameBook;
+    public String getTitle() {
+        return title;
     }
 
-    public void setNameBook(String nameBook) {
-        this.nameBook = nameBook;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAuthor() {
@@ -27,5 +27,10 @@ public class Book {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    String getInfo() {
+        return "[название: " + title + ", автор: " + author + ", год: "
+                + year + "]";
     }
 }
