@@ -19,9 +19,9 @@ public class Library {
         printReaders(readers);
         printBooks(books);
 
-        reader1.takeBook(3);
+        reader1.takeBook(book1, book2, book3);
         reader2.takeBook("Космобиолухи, Громыко", "Java программирование, Шилдт");
-        reader3.takeBook(book1, book2,book3);
+        reader3.takeBook(book4);
 
         reader1.returnBook("Приключения, Словарь, Энциклопедия");
         reader2.returnBook("Java программирование, Шилдт");
