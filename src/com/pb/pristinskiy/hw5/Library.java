@@ -4,16 +4,17 @@ public class Library {
     public static void main(String[] args) {
         Reader reader1 = new Reader("Петров В.В.", 1, "ИФ",
                 "21.10.1999", "+806711111", "10012");
-        Reader reader2 = new Reader("Никольский А.А.", 2, "ИФ",
+        Reader reader2 = new Reader("Никольский А.А.", 2, "ПГС",
                 "11.11.1997", "+806722222", "10015");
-        Reader reader3 = new Reader("Иващенко А.Г.", 3, "ИФ",
-                "05.04.2005", "+806733333", "10012");
+        Reader reader3 = new Reader("Иващенко А.Г.", 3, "ИТ",
+                "05.04.2005", "+806733333", "10025");
         Reader[] readers = {reader1, reader2, reader3};
 
         Book book1 = new Book("Приключения", "Иванов И.И.", 2005);
         Book book2 = new Book("Словарь", "Сидоров А. В", 1980);
         Book book3 = new Book("Энциклопедия", "Гусев К. В.", 2010);
-        Book[] books = {book1, book2, book3};
+        Book book4 = new Book("Темная Башня. Стрелок","Стивен Кинг",1982);
+        Book[] books = {book1, book2, book3, book4};
 
         printReaders(readers);
         printBooks(books);
