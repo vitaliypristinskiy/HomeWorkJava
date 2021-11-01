@@ -2,9 +2,12 @@ package com.pb.pristinskiy.hw5;
 
 public class Library {
     public static void main(String[] args) {
-        Reader reader1 = new Reader("Петров В.В.", 1, "ИФ", "21.10.1999", "+806711111");
-        Reader reader2 = new Reader("Никольский А.А.", 2, "ИФ", "11.11.1997", "+806722222");
-        Reader reader3 = new Reader("Иващенко А.Г.", 3, "ИФ", "05.04.2005", "+806733333");
+        Reader reader1 = new Reader("Петров В.В.", 1, "ИФ",
+                "21.10.1999", "+806711111", "10012");
+        Reader reader2 = new Reader("Никольский А.А.", 2, "ИФ",
+                "11.11.1997", "+806722222", "10015");
+        Reader reader3 = new Reader("Иващенко А.Г.", 3, "ИФ",
+                "05.04.2005", "+806733333", "10012");
         Reader[] readers = {reader1, reader2, reader3};
 
         Book book1 = new Book("Приключения", "Иванов И.И.", 2005);

@@ -4,6 +4,7 @@ public class Reader {
 
         private String fullName;
         private int number;
+        private String readNumber;
         private String faculty;
         private String dateBirth;
         private String numberPhone;
@@ -20,9 +21,17 @@ public class Reader {
             return number;
         }
 
-        public void setReaderNumber (int number){
+        public void setNumber (int number){
             this.number = number;
         }
+
+        public String getReadNumber () {
+            return readNumber;
+        }
+
+        public void setReadNumber (String readNumber){
+        this.readNumber = readNumber;
+    }
 
         public String getFaculty () {
             return faculty;
@@ -48,12 +57,13 @@ public class Reader {
             this.numberPhone = numberPhone;
         }
     public Reader(String fullName, int number, String faculty,
-                  String dateBirth, String numberPhone) {
+                  String dateBirth, String numberPhone, String  readNumber) {
         this.fullName = fullName;
         this.number = number;
         this.faculty = faculty;
         this.dateBirth = dateBirth;
         this.numberPhone = numberPhone;
+        this.readNumber = readNumber;
     }
     public void takeBook(int number) {
         System.out.println(this.fullName + " взял " + number + " книги.");
@@ -98,10 +108,11 @@ public class Reader {
     public String getInfo() {
         return "{" +
                 "ФИО='" + fullName + '\'' +
-                ", Номер читательского=" + number +
+                ", Количество книг=" + number +
                 ", Факультет='" + faculty + '\'' +
                 ", Дата рождения='" + dateBirth + '\'' +
-                ", numberPhone='" + numberPhone + '\'' +
+                ", Номер телефона='" + numberPhone + '\'' +
+                ", Номер читательского='" + readNumber + '\'' +
                 '}';
     }
 
