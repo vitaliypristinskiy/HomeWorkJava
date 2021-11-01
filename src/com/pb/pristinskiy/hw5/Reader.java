@@ -56,10 +56,9 @@ public class Reader {
         public void setNumberPhone (String numberPhone){
             this.numberPhone = numberPhone;
         }
-    public Reader(String fullName, int number, String faculty,
+    public Reader(String fullName, String faculty,
                   String dateBirth, String numberPhone, String  readNumber) {
         this.fullName = fullName;
-        this.number = number;
         this.faculty = faculty;
         this.dateBirth = dateBirth;
         this.numberPhone = numberPhone;
@@ -80,7 +79,8 @@ public class Reader {
     public void takeBook(Book... books) {
         System.out.println(this.fullName + " взял следующие книги:");
         for (Book book : books) {
-            System.out.println(book.getTitle() + ", автор - " + book.getAuthor());
+            System.out.println(book.getTitle() + ", автор - " + book.getAuthor() +
+                    ", год издания -" + book.getYear());
         }
         System.out.println();
     }
@@ -100,7 +100,8 @@ public class Reader {
     public void returnBook(Book... books) {
         System.out.println(this.fullName + " вернул следующие книги:");
         for (Book book : books) {
-            System.out.println(book.getTitle() + ", автор - " + book.getAuthor());
+            System.out.println(book.getTitle() + ", автор - " + book.getAuthor() +
+                    ", год издания -" + book.getYear());
         }
         System.out.println();
     }
@@ -108,7 +109,6 @@ public class Reader {
     public String getInfo() {
         return "{" +
                 "ФИО='" + fullName + '\'' +
-                ", Количество книг=" + number +
                 ", Факультет='" + faculty + '\'' +
                 ", Дата рождения='" + dateBirth + '\'' +
                 ", Номер телефона='" + numberPhone + '\'' +
