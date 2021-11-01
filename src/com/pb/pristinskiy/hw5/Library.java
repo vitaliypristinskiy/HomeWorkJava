@@ -3,13 +3,13 @@ package com.pb.pristinskiy.hw5;
 public class Library {
     public static void main(String[] args) {
         Reader reader1 = new Reader("Петров В.В.", 1, "ИФ", "21.10.1999", "+806711111");
-        Reader reader2 = new Reader("Иванов И.И.", 2, "ИФ", "11.11.1997", "+806722222");
-        Reader reader3 = new Reader("Сидоров А.А.", 3, "ИФ", "05.04.2005", "+806733333");
+        Reader reader2 = new Reader("Никольский А.А.", 2, "ИФ", "11.11.1997", "+806722222");
+        Reader reader3 = new Reader("Иващенко А.Г.", 3, "ИФ", "05.04.2005", "+806733333");
         Reader[] readers = {reader1, reader2, reader3};
 
-        Book book1 = new Book("Задача трех тел", "Лю Цысинь");
-        Book book2 = new Book("Дюна", "Фрэнк Герберт");
-        Book book3 = new Book("Пикник на обочине", "Стругацкие");
+        Book book1 = new Book("Приключения", "Иванов И.И.", 2005);
+        Book book2 = new Book("Словарь", "Сидоров А. В", 1980);
+        Book book3 = new Book("Энциклопедия", "Гусев К. В.", 2010);
         Book[] books = {book1, book2, book3};
 
         printReaders(readers);
