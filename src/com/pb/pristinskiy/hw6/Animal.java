@@ -4,6 +4,14 @@ public class Animal {
     private String food;
     private String location;
 
+    public Animal() {
+    }
+
+    public Animal(String food, String location) {
+        this.food = food;
+        this.location = location;
+    }
+
     public String getFood() {
         return food;
     }
