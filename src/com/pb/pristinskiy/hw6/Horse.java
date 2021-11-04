@@ -25,12 +25,12 @@ public class Horse extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("Лошадь ест.");
+        System.out.println("Конь ест.");
     }
 
     @Override
     public String makeNoise() {
-        return "Иго-го-го-го!!!";
+        return "Ржание";
     }
 
     @Override
