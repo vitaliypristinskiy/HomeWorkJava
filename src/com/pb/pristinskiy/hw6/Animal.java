@@ -27,4 +27,8 @@ public class Animal {
     public void setLocation(String location) {
         this.location = location;
     }
+
+    public void sleep() {
+        System.out.println("Животное спит.");
+    }
 }
