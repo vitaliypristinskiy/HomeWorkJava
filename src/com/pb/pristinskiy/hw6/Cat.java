@@ -20,7 +20,7 @@ public class Cat extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("Кошка ест.");
+        System.out.println("Кот ест.");
     }
 
     @Override
