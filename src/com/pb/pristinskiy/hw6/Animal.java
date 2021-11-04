@@ -31,4 +31,11 @@ public class Animal {
     public void sleep() {
         System.out.println("Животное спит.");
     }
+    public void eat() {
+        System.out.println("Животное ест.");
+    }
+
+    public String makeNoise(){
+        return "издает звуки";
+    }
 }
