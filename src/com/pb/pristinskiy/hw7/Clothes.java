@@ -31,26 +31,4 @@ public abstract class Clothes {
         this.cost = cost;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Clothes)) return false;
-
-        Clothes clothes = (Clothes) o;
-
-        if (Double.compare(clothes.cost, cost) != 0) return false;
-        if (size != clothes.size) return false;
-        return color.equals(clothes.color);
-    }
-
-    @Override
-    public int hashCode() {
-        int result;
-        long temp;
-        result = size.hashCode();
-        temp = Double.doubleToLongBits(cost);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + color.hashCode();
-        return result;
-    }
 }
