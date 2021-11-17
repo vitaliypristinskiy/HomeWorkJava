@@ -12,6 +12,7 @@ public class Atelier {
                 new Tie(Size.L, "синий", 300),
                 new Tie(Size.L, "красный", 280),
         };
+
     }
         public static void dressMan (Clothes[] clothes){
             for (Clothes clothe : clothes) {
