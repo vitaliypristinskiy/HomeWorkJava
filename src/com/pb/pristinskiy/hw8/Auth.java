@@ -16,6 +16,7 @@ public class Auth {
         if (password.equals(confirmPassword) && (password.matches("[\\w]+") || password.contains("_") )
                 && password.length() < 21 && password.length() > 4) {
             this.password = password;
+            System.out.println("Регистрация успешна.");
         } else {
             throw new WrongPasswordException("Пароль должен содержать только латинские буквы, цифры и нижнее подчеркивание");
         }
