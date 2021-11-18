@@ -1,19 +1,10 @@
 package com.pb.pristinskiy.hw8;
 
 public class WrongLoginException extends Exception {
-    private String detail;
+    public WrongLoginException(){
 
-    public WrongLoginException() {
-        detail = "Incorrect login";
     }
-
-    public WrongLoginException(String message) {
-        super(message);
-        detail = message;
-    }
-
-    @Override
-    public String toString() {
-        return "WrongLoginException: " + detail;
+    public WrongLoginException(String message){
+        Exception exc = new Exception(message);
     }
 }
